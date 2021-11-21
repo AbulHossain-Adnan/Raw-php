@@ -1,0 +1,63 @@
+PHP FUNCTION:
+-------------
+1.php function is a block of statement that can used repeatedly in program.
+2.php function not execute automently when page is loaded.
+3.php function should be called when its needded.
+
+
+php Function Syntext:
+---------------------
+
+function functionname()
+{
+
+code to be execute here//
+
+}
+
+
+example:1
+---------
+
+function writemsg()
+{
+echo "hello world";
+
+}
+
+function called:
+----------------
+writemsg();
+
+function name first backet er maddhome call kore use kora jabe.
+
+
+
+
+
+example 2:peramiters pass with php.
+----------
+function familyname($fname,$year){
+
+return $fname.$year;      peramiters returned//
+}
+
+familyname('joinfamily','10 years')
+output:joinfamily10years;
+
+akhane string value k int datatype hisabe dhore nise.kono error ashe nai abar jodi strict_type=1
+ditam taile error ta show korto
+ay dhore neoa off korte chaile,
+ <?php declare(strict_types=1); // strict requirement ay php surute define 
+
+
+
+example:3
+---------
+php default peramiter use kore.
+
+function defaultperamiter(int $value=50){
+echo $value;
+}
+defaultperamiter(5000) ->output:5000
+defaultperamiter()      ->output:50

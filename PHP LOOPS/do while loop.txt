@@ -1,0 +1,17 @@
+do while loop:
+-------------
+do while loop is a block thogh run once then loop as long as spacified condition is
+true.
+
+example:
+--------
+<?php
+$x=1;
+do{
+echo "the number is: $x";
+$x++;
+
+}while( $x <5)
+
+?>
+do while loop code execute once then check condition its true or false.

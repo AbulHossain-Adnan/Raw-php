@@ -1,0 +1,38 @@
+PHP LOOPS:
+----------
+1.php loops is a block of statement when need code to run again and again as long as
+specfic conditions is true.
+
+2.in php there are these type of loop availabe:
+1.while loop,
+2.do while loop,
+3.for loop,
+4.foreach loop
+
+
+while loop:
+-----------
+first while loop  will check the condition then execute the code.so when we don't need
+to run code befor check the condition we should use while loops.
+
+example:
+--------
+
+<?php
+$i=1
+while(5 > $i){
+echo "the number is: $i <br>";
+$i++;
+}
+?>
+output:
+the number is : 1;
+the number is : 2;
+the number is : 3;
+the number is : 4;
+
+
+akhane $i er value print hosse .spacified condition er upor base
+ kore .first $i er value 1 then ++ mane 1 kore barte thakbe condition unujai
+
+

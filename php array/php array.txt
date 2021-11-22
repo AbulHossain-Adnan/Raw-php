@@ -1,0 +1,14 @@
+php array:
+-----------
+ php array is special variable can contain more one then value at a time.
+
+example:
+--------
+$color=array("red", "green","white");
+
+
+type of array:
+there is tree type of array in php array:
+1:index array,
+2.accociative array,
+3.multidymentional array.

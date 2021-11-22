@@ -1,0 +1,45 @@
+for loop:
+---------
+for loop -loops through a block of code run spacific number of time.
+
+
+example:
+--------
+
+<?php
+
+for($x= 0, $x < 5, $x++){
+echo "the number is: $x <br> " ;
+
+}
+
+?>
+output:
+the number is : 0 ;
+the number is : 1 ;
+the number is : 2 ;
+the number is : 3 ;
+the number is : 4 ;
+
+
+example:
+--------
+<?php
+
+for($x =0, $x <= 10 ,$x++){
+echo " $x <br>";
+{
+
+output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+?>

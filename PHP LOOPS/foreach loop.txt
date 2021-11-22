@@ -1,0 +1,33 @@
+foreach loop:
+-------------
+foreach loop -loops through a block of code for each eliment of array.
+
+example:index array loop
+foreach loop works on array
+
+<?php
+$colors=array("red", "black", "green");
+
+foreach($colors as $value){
+echo " $value <br> ";
+
+
+}
+
+
+output:
+red;
+black;
+green;
+
+?> 
+
+example:accociative array loop
+<?php
+$colors=array("red"=>"car", "green"=>"tree", "blue"=>"sky");
+
+foreach($colors as $kew=> $value){
+echo $kew= $value "<br>";
+}
+
+?>

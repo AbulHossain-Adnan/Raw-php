@@ -1,0 +1,43 @@
+Accociative Array:
+------------------
+Accociative arry are arrays that use name keys.
+
+example:
+--------
+$color=array("color"=>"red","coror"=>"green","color"=>"white");
+
+Two way to crear accociative array.
+
+example:1 way
+--------
+
+$adnan=array("fullname"=>"mdadnan","age"=>"22");
+
+echo $adnan[$fullname].$adnan[$age]."years old";
+
+
+
+exsample:2 way:
+---------------
+
+$adnan["fullname"]="mdadnan";
+$adnan["age"]="22";
+echo $adnan['fullname']." ".$adnan['age'];
+
+
+
+foreach loop on accociative array
+
+<?php
+$colors=("car"=>"red","tree"=>"green","sky"="blue");
+
+foreach($colors as $x=> $value){
+
+echo $x."=".$value
+
+}
+
+
+?>
+
+

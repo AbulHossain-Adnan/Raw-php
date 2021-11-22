@@ -1,5 +1,12 @@
 indexed array:
 -------------
+
+Indexed arrys use numeric number and index number start with 0;
+
+
+
+
+
 indexed array can asing tow way,
 1.automaticly,
 2.manually.

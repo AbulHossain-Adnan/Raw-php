@@ -1,0 +1,17 @@
+Multidymentional array:
+-----------------------
+Multidymentional array cotain more array inside arrays.
+
+example:
+--------
+$car=array(
+array("volvo","22"),
+array("bmw","10"),
+)
+echo $car[0][0].$car[0][1]." <br> ";
+echo $car[1][0].$car[1][1];
+
+OutPut:
+-------
+volvo22
+bmw10

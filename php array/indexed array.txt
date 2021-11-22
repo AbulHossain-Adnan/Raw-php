@@ -1,0 +1,53 @@
+indexed array:
+-------------
+indexed array can asing tow way,
+1.automaticly,
+2.manually.
+
+1.automaticly:
+-----------------
+$color=array("red","green","white");
+
+2.manually:
+-----------
+
+$color[0]="red";
+$color[1]="green";
+$color[2]="white";
+
+
+Note::index value start with 0 .
+------------------------------
+
+
+example:
+-------
+
+<?php
+$color=array("red","green","white");
+echo "I like ". $color[0]." ".$color[1]." "."and".$color[2];
+?>
+output:
+I like red green and white;
+
+
+loop through an indexed array and pring all value you could use for loop.
+
+example:
+-------
+<?php
+$color=array("red","green","white");
+$colorlength=count($color);
+
+for($i=0,$i<$colorlength ,$i++){
+
+echo "the color is:".$color[$i]."<br>";
+
+
+}
+?>
+Outeput:
+--------
+the color is: red ;
+the color is: green;
+the color is: white;

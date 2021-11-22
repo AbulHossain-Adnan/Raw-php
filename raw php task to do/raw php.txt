@@ -1,0 +1,20 @@
+PHP Function:
+-------------
+1.crate a function and sum betwen two number and print the value outsite of the
+function.
+2.create peramiters name and age and print the value.
+
+PHP Switch:
+-----------
+1.make calculator  using switch.
+
+
+PHP Loops:
+-----------
+1.print number 1 to 10 and 10 to 1.
+2.loop on accociative array print the values.
+
+php array:
+----------
+how many tipe array in php.
+explain. 

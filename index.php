@@ -117,6 +117,17 @@ if(isset($_GET['submit'])) {
 
 <?php
 
+?><br><br>
+
+<!-- print number 1 to 10 and 10 to 1 print the value. -->
+
+<?php
+$x=0;
+while($x <= 10){
+	
+	echo "the number is:"." ".$x."<br>";
+	$x++;
+}
 ?>
 
 

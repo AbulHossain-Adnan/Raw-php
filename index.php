@@ -136,6 +136,29 @@ while($x >= 0){
 	echo "the number is:"." ".$x. "<br>";
 	--$x;
 }  
+?><br>
+
+<!-- loop on accociative array -->
+
+<?php
+$colors=array('car'=>'red','tree'=>'green','sky'=>'blue');
+
+foreach ($colors as $x => $value) {
+	echo $x."=".$value."<br>";
+}
+
+?><br><br>
+<?php
+  $colors=array('car'=>'red','tree'=>'green','sky'=>'blue');
+  $collectioncount=count($colors);
+
+  for($i=0; $i < $collectioncount; $i++){
+
+  	foreach($colors as  $value){
+  		echo $value."<br>";
+  	}
+
+  }
 ?>
 
 

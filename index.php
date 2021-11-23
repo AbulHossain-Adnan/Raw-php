@@ -17,7 +17,46 @@ function sum(int $x, int $y){
 
 } 
 echo sum(50,10);
+?><br>
+
+
+<!-- 2.create peramiters name and age and print the value. -->
+
+<?php
+
+
+function peramiters($name, $age){
+	echo "my name is"." ".$name."i am ".$age." "."years old";
+}
+
+peramiters('adnan',22);
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

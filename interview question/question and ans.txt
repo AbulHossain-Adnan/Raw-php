@@ -1,0 +1,144 @@
+This page contains PHP interview questions and answers.
+Q1: What is the difference between require and require_once?
+
+The require statement is used to include a file. And if we use require multiple times then we will include a given file multiple times.
+
+The require_once statement is similar to the require statement but in this case a file in not included again if it is already included.
+
+In the following example we have a sample.php file and we are including it in the hello.php file.
+
+sample.php
+
+<?php
+  echo "Hello from sample.php file.";
+?>
+
+hello.php
+
+<?php
+  require 'sample.php';
+  require 'sample.php';
+  require 'sample.php';
+?>
+
+So, hello.php file will print "Hello from sample.php file." 3 times.
+
+If we use require_once then we will get the message only once.
+
+<?php
+  require_once 'sample.php';
+  require_once 'sample.php';
+  require_once 'sample.php';
+?>
+
+Q2: What is the difference between include and require?
+
+Both are used to include files but require will exit with fatal error if it fails to include the file. Whereas, include will move on with the execution even if it fails to include the file.
+
+In the following example we are using include to include dummy.php file which does not exists.
+
+<?php
+  include 'dummy.php';
+
+  echo "some text message...";
+?>
+
+The above code gives the following output.
+
+Warning: include(dummy.php): failed to open stream: No such file or directory in /Users/yusufshakeel/Sites/php-example/include-file.php on line 2
+
+some text message...
+
+In the following code we are using require and it will give fatal error.
+
+<?php
+  require 'dummy.php';
+
+  echo "some text message...";
+?>
+
+Output:
+
+Fatal error: require(): Failed opening required 'dummy.php' in /Users/yusufshakeel/Sites/php-example/require-file.php on line 2
+
+Q3: Write a program in PHP to get IP address of the client
+
+For this we can use the $_SERVER["REMOTE_ADDR"].
+
+<?php
+  
+  echo "IP Address: " . $_SERVER["REMOTE_ADDR"];
+
+?>
+
+Q4: What is the output of the following PHP code?
+
+PHP code snippet:
+
+echo printf('Hello World');
+
+Answer
+
+The output of the above code is Hello World11.
+
+First printf() will execute which will print Hello World. Then echo will print
+ 11 which is the returned value of printf function.
+
+printf function returns the length of the outputted string.
+Q5: What is the output of the following PHP code?
+
+PHP Code:
+
+$x = 10;
+$y = 'x';
+$$y = 20;
+echo $x . ' ' . $y;
+
+Answer
+
+The above code will print 20 x.
+
+Note! $$y translate into $x.
+
+So, $$y = 20; means we are assigning 20 value to variable $x.
+Q6: What is the difference between unlink and unset?
+
+We use unlink to delete a file from the file system.
+
+We use unset to set the variable to undefined.
+
+Example: Following code will delete a file.
+
+unlink('sample.txt');
+
+Example: Following code will set the variable to undefined.
+
+$x = 10;
+unset($x);
+
+Q7: What are the different types of PHP error
+
+There are three types of error in PHP.
+
+    Notice
+    Warning
+    Fatal
+
+Q8: What is a Notice error in PHP?
+
+This is a non-critical error and occurs during execution of the PHP script.
+
+Example: When accessing an undefined variable we will get a notice error.
+Q9: What is a Warning error in PHP?
+
+Important than Notice error and occurs during script execution. Though the
+ execution does not stops when a warning error occurs.
+
+Example: A warning error will occur when trying to include a file that does
+ not exists.
+Q10: What is a Fatal error in PHP?
+
+Fatal error is a very important error type. When it occurs it terminates the
+ execution of the script.
+
+Example: When trying to require a file that does not exists then a fatal error will occur and the script will stop executing. 
